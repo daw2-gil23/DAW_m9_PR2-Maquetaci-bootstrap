@@ -1,0 +1,8 @@
+div{
+    border: 1px solid red;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*hacemos que los borders y paddings no sumen al ancho de los elementos*/
+}
