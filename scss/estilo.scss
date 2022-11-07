@@ -6,8 +6,17 @@ div{
 
 //variables
 $secundario : rgba(245,252,255,255);
+$h1 : 56px;
 
 //mixins
 .fondo{
     background: $secundario;
+}
+
+.negro a{
+    color: black;
+}
+
+.h1_tamanyo{
+    font-size: $h1;
 }

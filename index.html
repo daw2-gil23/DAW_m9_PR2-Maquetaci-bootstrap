@@ -16,26 +16,30 @@
     <header>
         <div class="container-fluid">
             <div class="container">
-                <nav class="navbar-expand-lg navbar-light bg-light">
-                    <div class="row">
-                        <div class="col-3 pr-5"><img src="imagen/logo.PNG" alt="Bootstrap" width="100" height="24"></div>
-                        <div class="col-7 collapse navbar-collapse">
-                            <ul class="navbar-nav me-auto mb-lg-0">
-                                <li class="nav-item ">
-                                    <a class="nav-link ml-5 ml-lg-0" aria-current="page" href="#">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link mr-5" href="#">Portofolio</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">About me</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Testimonials</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-2">contactame</div>
+                <nav class="row mt-2 mb-2">
+                    <div class="col-2">
+                      <a class="navbar-brand" href="#">
+                        <img src="./imagen/logo.PNG" class="d-inline-block w-75 mt-1">
+                      </a>
+                    </div>
+                    <div class="col-8">
+                      <ul class="nav justify-content-center negro">
+                        <li class="nav-item">
+                          <a class="nav-link active" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Testimonials</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-2">
+                      <input class="btn btn-outline-primary" type="submit" value="Contact Me">
                     </div>
                 </nav>
             </div>
@@ -44,11 +48,11 @@
     <main>
         <div class="container-fluid">
             <div class="container">
-                <section id="header" class="fondo">
+                <section id="header" class="fondo pt-5 pb-5">
                     <div class="row">
                         <div class="col-6">
                             <h6 class="pt-3">Hey, I am John</h6>
-                            <h1 class="pt-3">I create product design and brand experience</h1>
+                            <h1 class="pt-3 h1_tamanyo">I create product design and brand experience</h1>
                             <h4 class="pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</h4>
                             <button type="button" class="btn btn-outline-primary mt-3">Primary</button>
                         </div>
@@ -58,21 +62,41 @@
                     </div>
                 </section>
                 <section id="skill">
-                    <div class="row">
+                    <div class="row pt-5 pb-5">
                         <div class="col-12">
                             <h6 class="pt-3">My Skills</h6>
                             <h1 class="pt-3">My Expertise</h1>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-3">
-                            <div><img src="imagen/producto.png" alt="producto"></div>
-                            <h3>Strategy & Direction</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                    <div class="row pb-5">
+                        <div class="col-3 card">
+                            <img src="imagen/producto.png" class="card-img-top w-25" alt="producto">
+                            <div class="card-body">
+                              <h3 class="card-title">Strategy & Direction</h3>
+                              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                            </div>
                         </div>
-                        <div class="col-3">a</div>
-                        <div class="col-3">a</div>
-                        <div class="col-3">a</div>
+                        <div class="col-3 card">
+                            <img src="imagen/tag_1.png" class="card-img-top w-25" alt="tag">
+                            <div class="card-body">
+                                <h3 class="card-title">Branding & Logo</h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                            </div>
+                        </div>
+                        <div class="col-3 card">
+                            <img src="imagen/feather-pen 1.png" class="card-img-top w-25" alt="pen">
+                            <div class="card-body">
+                                <h3 class="card-title">UI & UX Design</h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                            </div>
+                        </div>
+                        <div class="col-3 card">
+                            <img src="imagen/Webflow_Development.png" class="card-img-top w-25" alt="web">
+                            <div class="card-body">
+                                <h3 class="card-title">UI & UX Design</h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                            </div>
+                        </div>
                     </div>
                 </section>
                 <section id="frame">
@@ -107,10 +131,28 @@
                                   <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
                                   <a href="#">View In Dribbble</a>
                                 </div>
-                              </div>
+                            </div>
                         </div>
-                        <div class="col-4"></div>
-                        <div class="col-4"></div>
+                        <div class="col-4">
+                            <div class="card" style="width: 100%;">
+                                <img src="imagen/app.png" alt="app">
+                                <div class="card-body">
+                                  <h3>App Dashboard</h3>
+                                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                                  <a href="#">View In Dribbble</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card" style="width: 100%;">
+                                <img src="imagen/pc.png" alt="pc">
+                                <div class="card-body">
+                                  <h3>Easy Rent</h3>
+                                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                                  <a href="#">View In Dribbble</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
                 <section id="testimonial">
@@ -121,10 +163,48 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-4">1
+                        <div class="col-4">
+                            <img src="./imagen/estrellas.png" alt="estrellas" class="w-25">
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.</p>
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="./imagen/Dianne.png" alt="Dianne" class="w-100 h-100">
+                                </div>
+                                <div class="col-4">
+                                    <h6>Dianne Russell</h6>
+                                    <h6>Starbucks</h6>
+                                </div>
+                                <div class="col-5"></div>
+                            </div>
                         </div>
-                        <div class="col-4">2</div>
-                        <div class="col-4">3</div>
+                        <div class="col-4">
+                            <img src="./imagen/estrellas.png" alt="estrellas" class="w-25">
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.</p>
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="./imagen/kristin.png" alt="kristin" class="w-100 h-100">
+                                </div>
+                                <div class="col-4">
+                                    <h6>Kristin Watson</h6>
+                                    <h6>Louis Vuitton</h6>
+                                </div>
+                                <div class="col-5"></div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <img src="./imagen/estrellas.png" alt="estrellas" class="w-25">
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.</p>
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="./imagen/Kathryn.png" alt="kristin" class="w-100 h-100">
+                                </div>
+                                <div class="col-4">
+                                    <h6>Kathryn Murphy</h6>
+                                    <h6>McDonald's</h6>
+                                </div>
+                                <div class="col-5"></div>
+                            </div>     
+                        </div>
                     </div>
                 </section>
                 <section id="contact">
@@ -153,7 +233,6 @@
                                 <input type="text" class="form-control" id="apellido" aria-describedby="apellido">
                             </div>
                         </div>
-                       
                     </form>
                 </section>
             </div>

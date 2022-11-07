@@ -4,4 +4,12 @@ div {
 
 .fondo {
   background: rgb(245, 252, 255);
+}
+
+.negro a {
+  color: black;
+}
+
+.h1_tamanyo {
+  font-size: 56px;
 }/*# sourceMappingURL=estilo.css.map */
