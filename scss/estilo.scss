@@ -1,0 +1,13 @@
+//Esto es scss
+div{
+    border: 1px solid blue;
+}
+
+
+//variables
+$secundario : rgba(245,252,255,255);
+
+//mixins
+.fondo{
+    background: $secundario;
+}
