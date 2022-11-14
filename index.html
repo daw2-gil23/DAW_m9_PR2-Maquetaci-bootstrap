@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maquetacio bootstrap</title>
-    <!-- Libreria de Boostrap css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!-- JSS para Boostrap -->
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="scss/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -23,23 +24,23 @@
                       </a>
                     </div>
                     <div class="col-8">
-                      <ul class="nav justify-content-center negro">
+                      <ul class="nav justify-content-center">
                         <li class="nav-item">
-                          <a class="nav-link active" href="#">Home</a>
+                          <a class="nav-link text-primary" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">Portfolio</a>
+                          <a class="nav-link text-dark" href="#">Portfolio</a>
                         </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">About Me</a>
+                        <li class="nav-item negro">
+                          <a class="nav-link text-dark" href="#">About Me</a>
                         </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Testimonials</a>
+                        <li class="nav-item negro">
+                          <a class="nav-link text-dark" href="#">Testimonials</a>
                         </li>
                       </ul>
                     </div>
                     <div class="col-2">
-                      <input class="btn btn-outline-primary" type="submit" value="Contact Me">
+                        <button type="button" class="btn btn-outline-primary bg-primary text-white">Contact Me</button>
                     </div>
                 </nav>
             </div>
@@ -48,53 +49,69 @@
     <main>
         <div class="container-fluid">
             <div class="container">
-                <section id="header" class="fondo pt-5 pb-5">
+                <section id="header" class="bg-primary bg-secondary">
                     <div class="row">
                         <div class="col-6">
-                            <h6 class="pt-3">Hey, I am John</h6>
-                            <h1 class="pt-3 h1_tamanyo">I create product design and brand experience</h1>
-                            <h4 class="pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</h4>
-                            <button type="button" class="btn btn-outline-primary mt-3">Primary</button>
+                            <h6>Hey, I am John</h6>
+                            <h1 class="pt-3"><strong>I create <span class="text-primary">product design</span> and brand experience</strong></h1>
+                            <p class="body01 espacioParrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                            <button type="button" class="btn btn-outline-primary mt-3 bg-primary text-white">Get in Touch</button>
                         </div>
                         <div class="col-6">
-                            <img class="img-fluid" src="imagen/cara.png" alt="cara">
+                            <img class="img-fluid " src="imagen/cara.png" alt="cara">
                         </div>
                     </div>
                 </section>
                 <section id="skill">
-                    <div class="row pt-5 pb-5">
+                    <div class="row pb-5">
                         <div class="col-12">
                             <h6 class="pt-3">My Skills</h6>
                             <h1 class="pt-3">My Expertise</h1>
                         </div>
                     </div>
                     <div class="row pb-5">
-                        <div class="col-3 card">
-                            <img src="imagen/producto.png" class="card-img-top w-25" alt="producto">
-                            <div class="card-body">
-                              <h3 class="card-title">Strategy & Direction</h3>
-                              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                        <div class="col-3 bg-secondary skills">
+                            <div class="p-4 ">
+                                <div class="pb-4">
+                                    <img src="imagen/producto.png" class="imagen" alt="producto">
+                                </div>
+                                <div>
+                                  <h3 class="pb-3">Strategy & Direction</h3>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-3 card">
-                            <img src="imagen/tag_1.png" class="card-img-top w-25" alt="tag">
-                            <div class="card-body">
-                                <h3 class="card-title">Branding & Logo</h3>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                        <div class="col-3 bg-secondary skills">
+                            <div class="p-4">
+                                <div class="pb-4">
+                                    <img src="imagen/tag_1.png" class="imagen" alt="tag">
+                                </div>
+                                <div>
+                                    <h3 class="pb-3">Branding & Logo</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-3 card">
-                            <img src="imagen/feather-pen 1.png" class="card-img-top w-25" alt="pen">
-                            <div class="card-body">
-                                <h3 class="card-title">UI & UX Design</h3>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                        <div class="col-3 bg-secondary skills">
+                            <div class="p-4">
+                                <div class="pb-4">
+                                    <img src="imagen/pen.png" class="imagen" alt="pen">
+                                </div>
+                                <div>
+                                    <h3 class="pb-3">UI & UX Design</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-3 card">
-                            <img src="imagen/Webflow_Development.png" class="card-img-top w-25" alt="web">
-                            <div class="card-body">
-                                <h3 class="card-title">UI & UX Design</h3>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                        <div class="col-3 bg-secondary">
+                            <div class="p-4">
+                                <div class="pb-4">
+                                    <img src="imagen/feather-pen 1.png" class="imagen" alt="pen">
+                                </div>
+                                <div>
+                                    <h3 class="pb-3">Webflow Development</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -104,22 +121,24 @@
                         <div class="col-6">
                             <img class="img-fluid" src="imagen/cara2.png" alt="cara">
                         </div>
-                        <div class="col-6 pt-5">
-                            <h6 class="pt-3">About</h6>
-                            <h2>About Me</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius faucibus massa sollicitudin amet augue. Nibh metus a semper purus mauris duis. Lorem eu neque, tristique quis duis. Nibh scelerisque ac adipiscing velit non nulla in amet pellentesque.</p>
-                            <p class="mt-3">Sit turpis pretium eget maecenas. Vestibulum dolor mattis consectetur eget commodo vitae. Amet pellentesque sit pulvinar lorem mi a, euismod risus r.</p>
+                        <div class="col-6 pt-5 contenedor">
+                            <div class="hijo">
+                                <h6 class="pb-1">About</h6>
+                                <h2 class="pb-2">About Me</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius faucibus massa sollicitudin amet augue. Nibh metus a semper purus mauris duis. Lorem eu neque, tristique quis duis. Nibh scelerisque ac adipiscing velit non nulla in amet pellentesque.</p>
+                                <p class="mt-3">Sit turpis pretium eget maecenas. Vestibulum dolor mattis consectetur eget commodo vitae. Amet pellentesque sit pulvinar lorem mi a, euismod risus r.</p>
+                            </div>
                         </div>
                     </div>
                 </section>
-                <section id="blog">
-                    <div class="row">
+                <section id="blog" class="pb-5">
+                    <div class="row pb-5">
                         <div class="col-6">
                             <h6 class="pt-3">Recent Projects</h6>
                             <h2>My Portfolio</h2>
                         </div>
                         <div class="col-6 d-flex justify-content-md-end">
-                            <button type="button" class="btn btn-danger">Visit My Dribbble</button>
+                            <button type="button" class="btn btn-danger mb-4 mt-4">Visit My Dribbble</button>
                         </div>
                     </div>
                     <div class="row">
@@ -155,7 +174,7 @@
                         </div>
                     </div>
                 </section>
-                <section id="testimonial">
+                <section id="testimonial" class="pb-5">
                     <div class="row">
                         <div class="col-12">
                             <h6 class="pt-3">Clients Feedback</h6>
@@ -208,32 +227,34 @@
                     </div>
                 </section>
                 <section id="contact">
-                    <div>
-                        <h6>Get In Touch</h6> 
-                        <h2>Contact me</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    <div class="inputs">
+                        <div>
+                            <h6>Get In Touch</h6> 
+                            <h2>Contact me</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        </div>
+                        <form>
+                            <div class="row">
+                                <div class="col-6">                          
+                                    <label for="exampleInputEmail1" class="form-label">First Name</label>
+                                    <input type="text" class="form-control" id="nombre" aria-describedby="nombre"></div>
+                                <div class="col-6">
+                                    <label for="exampleInputEmail1" class="form-label">Las Name</label>
+                                    <input type="text" class="form-control" id="apellido" aria-describedby="apellido">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">                          
+                                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                </div>
+                                <div class="col-6">
+                                    <label for="exampleInputEmail1" class="form-label">Las Name</label>
+                                    <input type="text" class="form-control" id="apellido" aria-describedby="apellido">
+                                </div>
+                            </div>
+                        </form>
                     </div>
-                    <form>
-                        <div class="row">
-                            <div class="col-6">                          
-                                <label for="exampleInputEmail1" class="form-label">First Name</label>
-                                <input type="text" class="form-control" id="nombre" aria-describedby="nombre"></div>
-                            <div class="col-6">
-                                <label for="exampleInputEmail1" class="form-label">Las Name</label>
-                                <input type="text" class="form-control" id="apellido" aria-describedby="apellido">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-6">                          
-                                <label for="exampleInputEmail1" class="form-label">Email address</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                            </div>
-                            <div class="col-6">
-                                <label for="exampleInputEmail1" class="form-label">Las Name</label>
-                                <input type="text" class="form-control" id="apellido" aria-describedby="apellido">
-                            </div>
-                        </div>
-                    </form>
                 </section>
             </div>
         </div>
@@ -241,29 +262,33 @@
     <footer>
         <div class="container-fluid">
             <div class="container">
-                <nav class="navbar-expand-lg navbar-light bg-light">
-                    <div class="row">
-                        <div class="col-3 pr-5"><img src="imagen/logo.PNG" alt="Bootstrap" width="100" height="24"></div>
-                        <div class="col-7 collapse navbar-collapse">
-                            <ul class="navbar-nav me-auto mb-lg-0">
-                                <li class="nav-item ">
-                                    <a class="nav-link ml-5 ml-lg-0" aria-current="page" href="#">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link mr-5" href="#">Portofolio</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">About me</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Testimonials</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-2">contactame</div>
+                <nav class="row mt-2 mb-2 pt-5 pb-5">
+                    <div class="col-2">
+                      <a class="navbar-brand" href="#">
+                        <img src="./imagen/logo.PNG" class="d-inline-block w-75 mt-1">
+                      </a>
+                    </div>
+                    <div class="col-8">
+                      <ul class="nav justify-content-center negro">
+                        <li class="nav-item">
+                          <a class="nav-link active" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Testimonials</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-2">
+                      <input class="btn btn-outline-primary" type="submit" value="Contact Me">
                     </div>
                 </nav>
-                <div class="row">
+                <div class="row pb-5 mt-2 linea">
                     <div class="col-6">Made with 💖 by Airdokan</div>
                     <div class="col-2"><p>Privacy Policy</p></div>
                     <div class="col-2"><p>Terms of Service</p></div>

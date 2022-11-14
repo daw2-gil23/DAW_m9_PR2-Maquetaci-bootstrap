@@ -1,22 +1,82 @@
 //Esto es scss
-div{
-    border: 1px solid blue;
-}
-
+// div{
+//     border: 1px solid blue;
+// }
 
 //variables
-$secundario : rgba(245,252,255,255);
-$h1 : 56px;
+$secondary : #F5FCFF;
+$primary: #5E3BEE;
+$h1-font-size: 56px;
+$h2-font-size: 48px;
+$h3-font-size: 24px; 
+//$font-family-sans-serif: 'Roboto Slab', serif;
 
-//mixins
-.fondo{
-    background: $secundario;
+//Portada
+.espacioParrafo{
+    padding-right: 25%;
 }
 
-.negro a{
-    color: black;
+#header{
+    padding-bottom: 100px;
+    padding-top: 100px;
 }
 
-.h1_tamanyo{
-    font-size: $h1;
+//Skills
+
+.body01{
+    font-size: 18px;
 }
+
+.skills{
+    padding-right: 32px;
+}
+
+.imagen{
+    height: 40px;
+    width: 40px;
+}
+
+.espacioSkills{
+    padding-top: 112px;
+    padding-bottom: 80px;
+}
+
+#skill{
+    padding-top: 112px;
+    padding-bottom: 112px;
+}
+
+//frame
+#frame{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.contenedor {
+    position: relative;
+}
+
+.hijo {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+//Contactar
+#contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//footer
+.linea{
+    border-top: 1px solid gray;
+}
+
+//blog
+#blog{
+
+}
+
+@import "../scss_boostrap/bootstrap.scss";
