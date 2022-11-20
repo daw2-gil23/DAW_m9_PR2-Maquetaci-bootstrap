@@ -50,6 +50,7 @@ $h3-font-size: 24px;
     padding-bottom: 112px;
 }
 
+//Añadimos espacio entre cada columna de los skills
 .gapSkills{
     gap: 32px;
 }
@@ -91,6 +92,7 @@ $h3-font-size: 24px;
     padding-bottom: 112px;
 }
 
+//Con font-size modifico el tamaño de la fuente de algunas frases del blog para que tenga el mismo tamaño que en la pagina de figma
 .body03{
     font-size: 14px;
 }
@@ -108,6 +110,7 @@ $h3-font-size: 24px;
     padding-bottom: 7px;    
 }
 
+//Añado espacio de relleno en la parte izquierda de la imagen de las flechas para que no este tan pegado al texto
 .linea img{
     padding-left: 12px;
 }
@@ -181,4 +184,5 @@ $h3-font-size: 24px;
     padding-right: 24px;
 }
 
+//importo el scss del boostrap para actualizar sus caracteristicas a nuestra pagina web
 @import "../scss_boostrap/bootstrap.scss";
