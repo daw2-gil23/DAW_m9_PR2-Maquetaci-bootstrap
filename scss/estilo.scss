@@ -4,82 +4,181 @@
 // }
 
 //variables
+//cambiamos las variables de boostrap por colores o tamaños que necesitamos
+//por ejemplo cambiamos el color primary que ahi por defecto en boostrap por un color morado que usare mucho en esta pagina web
 $secondary : #F5FCFF;
 $primary: #5E3BEE;
+$danger: #1C1E53;
+$success: #E62872;
+$info: #006B6A;
 $h1-font-size: 56px;
 $h2-font-size: 48px;
 $h3-font-size: 24px; 
 
+//convertimor todo el texto en roboto
 * {
     font-family: 'Roboto', sans-serif;
 }
 
+//Añado espacio de relleno en la parte superior y inferior del div con el id header
 #header{
     padding-bottom: 100px;
     padding-top: 100px;
 }
 
-//Skills
+//////////SKILLS
 
+//Con font-size modifico el tamaño de la fuente de algunas frases para que tenga el mismo tamaño que en la pagina de figma
 .body01{
     font-size: 18px;
 }
 
+//le pongo un ancho y una altura a la imagen
 .imagen{
     height: 40px;
     width: 40px;
 }
 
+//Añado espacio de relleno en la parte superior de cada skill
 .espacioSkills{
     padding-top: 112px;
 }
 
+//Añado espacio de relleno en la parte superior y inferior del div con el id skill
 #skill{
     padding-top: 112px;
     padding-bottom: 112px;
 }
 
-//frame
+.gapSkills{
+    gap: 32px;
+}
+
+
+//////////FRAME
+
+//Añado espacio de relleno en la parte superior y inferior del div con el id frame
 #frame{
     padding-top: 100px;
     padding-bottom: 100px;
 }
 
+//La clase contenedor y la clase hijo sirve para poner centrar el texto del frame
+//El position relative sirve para indicar que la capa forma parte del flujo normal, es decir, se podra desplazar respecto a lo que hubiera su posición normal
 .contenedor {
     position: relative;
 }
 
+//El position absolute lo que hace es colocarse depende el div padre, en este caso hara caso al div con la clase contenedor.
+//El top indica lo que se tiene que mover del borde superior en este caso se tiene que mover la mitad.
+//El transalte es para mover el div a lo largo del eje x y y, en este caso se movera -50 en el eje y
 .hijo {
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
+    padding-left: 40px;
 }
 
-//blog
+//////////BLOG
 
+//Añado espacio de relleno en la parte derecha del boton que ahi en el blog
 .boton{
-    background-color: #E62872;
-    color: white;
     margin-right: 12px;
 }
 
-.flecha{
-    width: 12;
+//Añado espacio de relleno en la parte inferior del blog
+#blog{
+    padding-bottom: 112px;
 }
 
-//Contactar
+.body03{
+    font-size: 14px;
+}
 
-//footer
+
+//Creo la linea que esta debajo de los enlaces del blog
+//Border bottom sirve para definir el borde inferior del div del color, tamaño y estilo que quiera
+//Ponemor color al texto
+//Le quitamos la decoración que tiene por defecto los enlaces
+//Y por ultimo le ponemos un espacio de relleno en la parte inferior del 7px
 .linea{
-    border-bottom: 2px solid $primary;
+    border-bottom: 1px solid #5E3BEE;
     color: black;
     text-decoration: none;
-    padding-bottom: 7px;
+    padding-bottom: 7px;    
 }
 
-//blog
-#blog{
+.linea img{
+    padding-left: 12px;
+}
 
+//////////TESTIMONIAL
+
+//Añado bordes al div para que sea vea igual a la pagina del figma
+//Border sirve para definir el borde del div del color, tamaño y estilo que quiera
+.lineaDiv{
+    border:1px solid #006B6A;
+}
+
+//Añado espacio de relleno en la parte superior y inferior del div con el id testimonial
+#testimonial{
+    padding-top: 112px;
+    padding-bottom: 112px;
+}
+
+//Añado espacio de relleno en la parte izquierda y derecha de cada comentario para que se centre mejor
+.espacioTestimonial{
+    padding-left: 13px;
+    padding-right: 13px;
+    gap: 32px;
+}
+
+//Añado espacio de relleno en la parte de abajo para que haya mas separación del titulo a los comentarios
+.espacioCustomer{
+    padding-bottom: 80px;
+}
+
+//////////Contactar
+
+//Añado espacio de relleno en la parte superior y inferior del div con el id contact
+#contact{
+    padding-top: 112px;
+    padding-bottom: 112px;    
+}
+
+//le pongo un ancho y una altura al botón
+.botonInput{
+    width: 128px;
+    height: 52px;
+}
+
+
+//////////FOOTER
+
+//Añado espacio de relleno en la parte superior y inferior del div con la clase menuFinal
+.menuFinal{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+
+//Añado espacio de relleno en la parte derecha a cada icono para que tengan separación entre ellos
+//También le pongo ancho y altura a los iconos
+.iconos{
+    padding-right: 12px;
+    width: 24px;
+    height: 24px;
+}
+
+//Añado espacio de relleno en la parte superior y inferior del div con la clase espacioFinal
+.espacioFinal{
+    padding-top: 33px;
+    padding-bottom: 80px;
+}
+
+//Añado espacio de relleno en la parte derecha a cada texto para que tengan separación entre ellos
+.espacioSetting{
+    padding-right: 24px;
 }
 
 @import "../scss_boostrap/bootstrap.scss";
